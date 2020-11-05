@@ -13,29 +13,13 @@ class Home extends StatelessWidget {
         title: Text('myapp'),
         centerTitle: true,
       ),
-      body: Center(
-          //child :
-          // child:IconButton(
-          // onPressed: (){},
-          // icon: Icons.add,
-          child: RaisedButton.icon(
-        onPressed: () {
-          print('saved to cloud');
-        },
-        icon: Icon(
-          Icons.wb_cloudy,
-          color: Colors.amberAccent,
-          size: 34.0,
-        ),
-        color: Colors.green,
-        label: Text('save to cloud'),
-      )),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(
-          Icons.add,
-        ),
+      body: Container(
+        child: Image.asset('images/img01.jpg'),
+        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+        color: Colors.amberAccent,
       ),
+      backgroundColor: Colors.red,
     );
   }
 }
